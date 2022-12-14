@@ -1,8 +1,6 @@
-class Cat:Animal()
+class Cat( name:String="Котик", food:String="Корм", location:String="Квартира"):Animal(name, food, location )
 {
-    override  val name="Котик"
-    override val food="корм"
-    override val location="квартира"
+
     override fun makeNoise(){println("мурчит")}
     override fun eat(){println("Кот ест $food")}
     override fun sleep() {println("Кот спит на диване")}

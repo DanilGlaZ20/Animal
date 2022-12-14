@@ -1,8 +1,6 @@
-class Dog:Animal()
+class Dog( name:String="Собачка", food:String="Мясо", location:String="Двор"):Animal(name, food, location )
 {
- override  val name="Собачка"
- override val food="мясо"
- override val location="двор"
+
  override fun makeNoise(){println("Гавкает")}
  override fun eat(){println("Пёс ест $food")}
  override fun sleep() {println("Собака спит в будке")}
